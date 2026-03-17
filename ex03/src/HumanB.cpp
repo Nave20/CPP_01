@@ -22,9 +22,9 @@ HumanB::HumanB(std::string name, Weapon* weapon) : _name(name), _weapon(weapon) 
 
 HumanB::~HumanB() {}
 
-void HumanB::setWeapon(Weapon *weapon)
+void HumanB::setWeapon(Weapon &weapon)
 {
-	this->_weapon->setType(weapon->getType());
+	this->_weapon = &weapon;
 }
 
 void HumanB::attack()
