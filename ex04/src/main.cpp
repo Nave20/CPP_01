@@ -38,8 +38,6 @@ void replacer(std::string file, std::string search, std::string replace)
 		}
 
 		out << line;
-		if (!in.eof())
-			out << "\n";
 	}
 }
 
